@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <header class="banner">
-            <menu>
+            <!-- <menu>
                 <nav class="nav-tab">
                     <ul>
                         <li>Home</li>
@@ -22,16 +22,16 @@
                         <li>jewellery</li>
                     </ul>
                 </nav>
-            </menu>
-            <section class="logo-cart">
+            </menu> -->
+            <section id="E-logo" class="logo-cart">
                 <img src="./images/logo.png" alt="">
 
-                <button class=""><i class="fa fa-shopping-cart"><sup>0</sup></i></button>
+                <button class="cart-logo fa fa-shopping-cart"><span class="num">0</span></button>
             </section>
             <section class="search-section" onclick="">
                 <input type="search" name="search" id="" size="100" style="padding: 20px; border-radius:10px; border: none;">
                 <!-- <i class="fa fa-search"></i> -->
-                <button class="fa fa-search"></button>
+                <button class="fa fa-search search"></button>
             </section>
             <section class="txt-section">
                 <h1>GET STARTED</h1>
@@ -46,7 +46,12 @@
         </div>
         <div id="product-container">
         </div>
-        <ul id="cart-items"></ul>
+        <div class="cart-holder">
+            <ul id="cart-items"></ul>
+            <div id="cart-Total">
+                
+            </div>
+        </div>
     </main>
 </body>
 <script src="./js/script.js"></script>
