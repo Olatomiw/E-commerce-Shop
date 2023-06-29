@@ -107,7 +107,6 @@ function renderCart() {
                     let s_n = event.target.dataset.index;
                     cart.splice(s_n, 1);
                     renderCart();
-                    console.log(s_n)
                 });
             });
         
