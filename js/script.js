@@ -1,20 +1,3 @@
-// let arr = [];
-// // arr_input.addEventListener("click", ()=>{
-// // })
-
-// function buttonHandle(button){
-//     let inputs = document.getElementsByClassName("input")
-
-//     for(i=0; i<inputs.length; i++){
-//         if(inputs[i] === button){
-//             arr.push(inputs[i].value)
-//         };
-//     };
-//     // arr.push(arr_input.value)
-//     console.log(arr)
-//     console.log(button);
-// }
-
 let products = [
     {
         "id" : 1,
