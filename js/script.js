@@ -20,7 +20,7 @@ let products = [
     {
         "id" : 2,
         "name" : "Kagan Bangles",
-        "image" :"../images/kangan-img.png",
+        "image" :"../images/20220218_074203.jpg",
         "category" : "jewelry",
         "price" : 50,
         "description": "Orginal Gold Jewellery"
@@ -53,15 +53,19 @@ const productContainer = document.getElementById("product-container");
 
 let cart = [];
 console.log("hello")
+// Creating product on the html with js
 storedProducts.forEach((product)=>{
     if(product.category == "jewelry"){
-        let productDiv = `<div class=product><h2>${product.name}</h2><div class="img-cont"><img src=${product.image}></div>
-    <p>Price: $${product.price}<p>
-    <p>Description: ${product.description}</p>
-    <button class = "addTo" data-name="${product.name}" data-image="${product.image}" data-price="${product.price}" data-id="${product.id}">Add to Cart</button></div>`;
+        let productDiv = `<div class=product>
+        <h2>${product.name}</h2>
+        <div class="img-cont"><img src=${product.image}></div>
+        <p>Price: $${product.price}<p>
+        <p>Description: ${product.description}</p>
+        <button class = "addTo" data-name="${product.name}" data-image="${product.image}" data-price="${product.price}" data-id="${product.id}">Add to Cart</button>
+        </div>`;
     productContainer.innerHTML+=productDiv;
     }
-
+        // Add product to cart
     let addToCartButton = document.querySelectorAll('.addTo');
     addToCartButton.forEach((button)=>{
         button.addEventListener('click', function(event) {
@@ -93,7 +97,11 @@ function renderCart() {
         let productTotal = document.querySelector("#cart-Total")
         cart.forEach(function(item, index) {
             var cartItem = document.createElement('li');
-            cartItem.innerHTML = `<div class="cart-list"><div class="cart-img"><img src="${item.img}"></div><p>${item.name}</p> - <p>$${item.price}</p><button class="delete-item" data-index="${index}">x</button></div>`;
+            cartItem.innerHTML = `<div class="cart-list">
+                <div class="cart-img"><img src="${item.img}"></div>
+                <p>${item.name}</p> - <p>$${item.price}</p>
+                <button class="delete-item" data-index="${index}">x</button>
+            </div>`;
             cartItemsContainer.appendChild(cartItem);
             // total of price
             let toNum = parseFloat(item.price)
