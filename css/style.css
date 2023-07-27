@@ -13,6 +13,10 @@ body{
     height: 90vh;
     background-size: cover;
     /* background-attachment: fixed; */
+    background-image: url(../images/banner-bg.png);
+    height: 80vh;
+    background-size: contain;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
@@ -67,7 +71,7 @@ body{
     letter-spacing: normal;
     line-height: normal;
     font-size: 50px;
-    color: darkgray;
+    color: rgb(237, 27, 27);
     font-weight: bolder;
 }
 
@@ -75,6 +79,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    min-height: 23rem;
 }
 /* Product section */
 
@@ -86,7 +91,7 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     box-shadow: 0px 0 30px 10px #f0f0f0;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     width: 20%;
     /* opacity: 0.5; */
@@ -95,13 +100,18 @@ body{
     text-transform: uppercase;
     color: black;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .img-cont{
-    width: 70%;
+    height: 200px;
+    width: 200px;
     /* border: 2px solid red; */
     margin: auto;
 }
 .img-cont img{
+    height: 100%;
     width: 100%;
 }
 .product h2{
@@ -112,9 +122,21 @@ body{
     margin-top: 10px;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
-    /* border: 2px solid red; */
+    border: 2px solid transparent;
+    background-color: rgb(72, 225, 30);
+    color: white;
+    border-radius: 2rem;
+}
+.addTo:hover{
+    cursor: pointer;
     background-color: black;
     color: white;
+    font-weight: bold;
+    font-family: cursive;
+}
+.cart-holder{
+    border: 10px solid yellow;
+    display: flex;
 }
 #cart-items{
     display: flex;
@@ -153,4 +175,31 @@ body{
     padding-right: 30px;
     font-style: italic;
     font-family: cursive
+}
+/* Delete */
+.delete-item:hover{
+    background-color: rgba(255, 0, 0, 0.472);
+    border: transparent;
+    padding: 2px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+@media screen and (max-width:1177px) {
+    .banner{
+        height: 50vh;
+        background-size:contain;
+    }
+    .txt-section h1{
+        font-size: 50px;
+    }
+    
+    .product{
+        width: 40%;
+    }
+}
+@media screen and (max-width:745px) {
+    .product{
+        width: 40%;
+        margin-bottom: 20px;
+    }
 }
