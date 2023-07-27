@@ -12,8 +12,6 @@ body{
     background-image: url(../images/banner2.jpg);
     height: 90vh;
     background-size: cover;
-    /* background-attachment: fixed; */
-    height: 90vh;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
@@ -61,6 +59,9 @@ body{
     justify-content: center;
     margin-top: 150px;
 }
+.search-section input{
+    width: 50%;
+}
 .txt-section{
     margin-top: 100px;
     text-align: center;
@@ -102,8 +103,7 @@ body{
     justify-content: space-between;
 }
 .img-cont{
-    height: 200px;
-    width: 200px;
+    width: 70%;
     /* border: 2px solid red; */
     margin: auto;
 }
@@ -198,5 +198,15 @@ body{
     .product{
         width: 40%;
         margin-bottom: 20px;
+    }
+    .banner{
+        height: 50vh;
+        background-size:cover;
+    }
+    .search-section{
+        justify-content: center;
+    }
+    .search-section input{
+        width: 50%;
     }
 }
