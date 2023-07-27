@@ -60,7 +60,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 150px;
-}git
+}
 .txt-section{
     margin-top: 100px;
     text-align: center;
@@ -184,10 +184,10 @@ body{
 @media screen and (max-width:1177px) {
     .banner{
         height: 50vh;
-        background-size:contain;
+        background-size:cover;
     }
     .txt-section h1{
-        font-size: 50px;
+        font-size: 45px;
     }
     
     .product{
