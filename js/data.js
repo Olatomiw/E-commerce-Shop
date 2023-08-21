@@ -4,7 +4,7 @@ export let shopProducts = [
         "name" : "Alienware Computer",
         "image": "../images/alienware-ickPGVMMr98-unsplash.jpg",
         "category" : "jewelry",
-        "price" : 50,
+        "price" : 1050,
         "description": "Alienware Computer"
     },
     {
@@ -12,7 +12,7 @@ export let shopProducts = [
         "name" : "JBL Speaker",
         "image" :"../images/sebastian-scholz-nuki-Fh3Dtg6QX4Q-unsplash.jpg",
         "category" : "jewelry",
-        "price" : 50,
+        "price" : 530,
         "description": "Orginal Gold Jewellery"
     },
     {
@@ -20,7 +20,7 @@ export let shopProducts = [
         "name" : "Samsung Tablet",
         "image" : "../images/henry-ascroft-7OFnb7NOvjw-unsplash.jpg",
         "category" : "jewelry",
-        "price" : 50,
+        "price" : 500,
         "description": "Samsung Tablet 10gb RAM"
     },
     {
@@ -36,31 +36,31 @@ export let shopProducts = [
         "name" : "Acer Laptop",
         "image" : "../images/Gadget-PNG-Transparent-Image.png",
         "category" : "jewelry",
-        "price" : 50,
+        "price" : 500,
         "description": "Orginal Gold Jewellery"
     },
     {
-        "id" : 5,
+        "id" : 6,
         "name" : "Headphone",
         "image" : "../images/c-d-x-PDX_a_82obo-unsplash.jpg",
         "category" : "jewelry",
-        "price" : 50,
-        "description": "Orginal Gold Jewellery"
+        "price" : 150,
+        "description": "Oraimo Headphones 84hrs battery capacity"
     },
-    {
-        "id" : 7,
-        "name" : "Apple watch",
-        "image" :"../images/daniel-korpai-wW7XbWYoqK8-unsplash.jpg",
-        "category" : "jewelry",
-        "price" : 50,
-        "description": "Orginal Gold Jewellery"
-    },
+    // {
+    //     "id" : 7,
+    //     "name" : "Apple watch",
+    //     "image" :"../images/daniel-korpai-wW7XbWYoqK8-unsplash.jpg",
+    //     "category" : "jewelry",
+    //     "price" : 250,
+    //     "description": "Apple wrist watch"
+    // },
     {
         "id" : 8,
         "name" : "Dell Laptop",
         "image" :"../images/Gadget-PNG-Transparent-HD-Photo.png",
         "category" : "jewelry",
-        "price" : 50,
-        "description": "Orginal Gold Jewellery"
+        "price" : 530,
+        "description": "Dell 10th gen Laptop 250SSD"
     }
 ];
