@@ -47,14 +47,14 @@ export let shopProducts = [
         "price" : 150,
         "description": "Oraimo Headphones 84hrs battery capacity"
     },
-    // {
-    //     "id" : 7,
-    //     "name" : "Apple watch",
-    //     "image" :"../images/daniel-korpai-wW7XbWYoqK8-unsplash.jpg",
-    //     "category" : "jewelry",
-    //     "price" : 250,
-    //     "description": "Apple wrist watch"
-    // },
+    {
+        "id" : 7,
+        "name" : "Apple watch",
+        "image" :"../images/daniel-korpai-wW7XbWYoqK8-unsplash.jpg",
+        "category" : "jewelry",
+        "price" : 250,
+        "description": "Apple wrist watch"
+    },
     {
         "id" : 8,
         "name" : "Dell Laptop",
