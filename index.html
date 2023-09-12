@@ -9,8 +9,22 @@
     <script src="https://kit.fontawesome.com/e27aa40951.js" crossorigin="anonymous"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
+    <div class="cart-holder">
+        <span class="close">&times;</span>
+        <ul class="cart-header-list">
+            <li class="cart-header"><h3>Image</h3></li>
+            <li class="cart-header"><h3>Product name</h3></li>
+            <li class="cart-header"><h3>Quantity</h3></li>
+            <li class="cart-header"><h3>Price</h3></li>
+        </ul>
+        <ul id="cart-items"></ul>
+        <div id="cart-Total">
+            <!-- <img src="./images/20220325_164316.jpg" alt=""> -->
+        </div>
+    </div>
     <div class="container">
         <header class="banner">
             <!-- <menu>
@@ -28,7 +42,7 @@
 
                 <button class="cart-logo fa-solid fa-cart-shopping"><span class="num">0</span></button>
             </section>
-            <section class="search-section" onclick="">
+            <section class="search-section">
                 <input type="search" name="search" id="" style="padding: 10px; border-radius:10px; border: none;">
                 <button class="fa-solid fa-magnifying-glass"></button>
             </section>
@@ -46,12 +60,7 @@
         <div id="product-container">
         </div>
     </main>
-    <div class="cart-holder">
-        <ul id="cart-items"></ul>
-        <div id="cart-Total">
-            <!-- <img src="./images/20220325_164316.jpg" alt=""> -->
-        </div>
-    </div>
+    <footer>Designed by theLazyCoder 2023</footer>
 </body>
 <script src="./js/script.js" type="module"></script>
 <script type="module" src="./js/data.js"></script>

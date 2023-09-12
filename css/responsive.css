@@ -1,0 +1,32 @@
+@media screen and (max-width:1177px) {
+    .banner{
+        height: 50vh;
+        background-size:cover;
+    }
+    .txt-section h1{
+        font-size: 45px;
+    }
+    
+    .product{
+        width: 30%;
+    }
+}
+@media screen and (max-width:745px) {
+    .product{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .banner{
+        max-height: 50vh;
+        background-size:cover;
+    }
+    .search-section{
+        justify-content: center;
+    }
+    .search-section input{
+        max-width: 50%;
+    }
+    .IconContainer{
+        justify-content: flex-start;
+    }
+}

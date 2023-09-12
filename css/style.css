@@ -6,7 +6,6 @@
 body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
-    margin-bottom: 50px;
 }
 .banner{
     background-image: url(../images/ady-teenagerinro-sQ0xXxQdfeY-unsplash.jpg);
@@ -120,12 +119,14 @@ body{
 }
 .img-cont{
     height: 100%;
+    display: flex;
+    justify-content: center;
     padding: 10px;
     margin: auto;
 }
 .img-cont img{
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    max-width: 100%;
 }
 .product h2{
     color: black;
@@ -194,25 +195,40 @@ body{
     transition-duration: .5s;
   }
 .cart-holder{
-    border: 10px solid yellow;
+    /* border: 10px solid yellow; */
     display: flex;
     flex-direction: column;
+    display: none;
+    height: 100vh;
+    /* margin-top: 0; */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 #cart-items{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     margin-left:20px ;
+    background-color:white;
     border: 2px solid red;
     list-style-type: none;
 }
 .cart-img img{
-    width: 50%;
+    max-width: 50%;
     margin: auto;
+    height: auto;
 }
 .cart-list{
     display: flex;
-    /* border: 2px solid yellow; */
     justify-content: space-between;
     align-items: center;
 }
@@ -221,11 +237,22 @@ body{
     text-align: center;
     padding-right: 20px;
 }
+.cart-header-list{
+    display: flex;
+    margin-left: 20px;
+    /* justify-content: space-between; */
+}
+.cart-header{
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
 .cart-logo{
     font-size: xx-large;
     border: none;
     background-color: transparent;
     color: antiquewhite;
+    cursor: pointer;
 }
 .cart-logo span{
     vertical-align: super;
@@ -247,35 +274,19 @@ body{
     border-radius: 10px;
     cursor:pointer;
 }
-@media screen and (max-width:1177px) {
-    .banner{
-        height: 50vh;
-        background-size:cover;
-    }
-    .txt-section h1{
-        font-size: 45px;
-    }
-    
-    .product{
-        width: 30%;
-    }
+
+.close{
+    font-size: xx-large;
+    background-color: white;
+    color: #000;
+    border-radius: 20px;
 }
-@media screen and (max-width:745px) {
-    .product{
-        width: 30%;
-        margin-bottom: 20px;
-    }
-    .banner{
-        height: 50vh;
-        background-size:cover;
-    }
-    .search-section{
-        justify-content: center;
-    }
-    .search-section input{
-        width: 50%;
-    }
-    .IconContainer{
-        justify-content: flex-start;
-    }
+
+footer{
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(95, 93, 93);
+    color: #f0f0f0;
+    font-size: larger;
+
 }
