@@ -89,7 +89,7 @@ function renderCart() {
                 <div>
                 <p class="cart-item-price">$${(item.price * item.Qty).toFixed(2)}</p>
                 </div>
-                <div><button class="delete-item" data-index="${index}">x</button></div>
+                <div><button class="delete-item" data-index="${index}">&times;</button></div>
             </div>`;
             cartItemsContainer.appendChild(cartItem);
             // Accessing the increment and decrement button

@@ -36,9 +36,14 @@ body{
     position: fixed;
     margin-top: 10px;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 0 25px;
     z-index: 1;
+}
+.logo-cart section{
+    display: flex;
+    align-items: center;
 }
 .logo-background{
     background-color: rgba(0, 0, 0, 0.513);
@@ -270,9 +275,12 @@ body{
 .delete-item:hover{
     background-color: rgba(255, 0, 0, 0.472);
     border: transparent;
-    padding: 2px;
-    border-radius: 10px;
+    padding: 5px;
+    padding: auto;
+    font-size: larger;
+    border-radius: 50%;
     cursor:pointer;
+    transition-duration: 0.5s;
 }
 
 .close{
