@@ -22,7 +22,7 @@ const myScroll= ()=>{
 }
 // Cart display functonality
 cart_holder.addEventListener("click", ()=>{
-    cart.length==0? alert("your cart is empty"): document.querySelector(".cart-holder").style.display="block" 
+    cart.length==0? alert("your cart is empty"): document.querySelector(".cart-holder").style.display="block"
 })
 
 
@@ -70,8 +70,10 @@ storedProducts.forEach((product)=>{
 function renderCart() {
         cartItemsContainer.innerHTML = '';
         let productTotal = document.querySelector("#cart-Total")
+        let newTotal = 0;
         let cartItem;
         cart.forEach(function(item, index) {
+            let newPrice = (item.Qty * item.price).toFixed(2);
             cartItem = document.createElement('li');
             cartItem.innerHTML = `
             <div class="cart-list">
@@ -87,7 +89,7 @@ function renderCart() {
                  <button class="increment-button">+</button>
                 </div>
                 <div>
-                <p class="cart-item-price">$${(item.price * item.Qty).toFixed(2)}</p>
+                <p class="cart-item-price">$${newPrice}</p>
                 </div>
                 <div><button class="delete-item" data-index="${index}">&times;</button></div>
             </div>`;
@@ -110,7 +112,12 @@ function renderCart() {
                 quantityValue.textContent = item.quantity;
                 renderCart();
               })
+              
+            let toNum = parseFloat(newPrice);
+            newTotal += toNum;
         });
+
+        productTotal.innerHTML=`Total : $${newTotal}`
 
         // Creating delete function
         let deleteButtons = document.querySelectorAll('.delete-item');

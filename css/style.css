@@ -203,6 +203,7 @@ body{
     /* border: 10px solid yellow; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     display: none;
     height: 100vh;
     /* margin-top: 0; */
@@ -212,6 +213,7 @@ body{
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
+    transition-duration: 5s;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -293,8 +295,16 @@ body{
 footer{
     margin-bottom: 0;
     text-align: center;
-    background-color: rgb(95, 93, 93);
+    background-color: rgb(42, 41, 41);
     color: #f0f0f0;
     font-size: larger;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+footer section{
+    width: 30%;
+    text-align: justify;
+    padding: 10px 20px;
 }

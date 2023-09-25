@@ -12,6 +12,9 @@
     }
 }
 @media screen and (max-width:745px) {
+    .txt-section h1{
+        font-size: 30px;
+    }
     .product{
         width: 30%;
         margin-bottom: 20px;
